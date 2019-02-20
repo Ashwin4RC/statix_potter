@@ -308,6 +308,9 @@ on boot
 
 # msm specific files that need to be created on /data
 on post-fs-data
+
+    start ril-daemon
+
     mkdir /tombstones/modem 0771 system system
     mkdir /tombstones/lpass 0771 system system
     mkdir /tombstones/wcnss 0771 system system
